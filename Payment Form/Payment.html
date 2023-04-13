@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Mukta:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+  <form>
+    <h1>Payment From</h1>
+    <hr>
+      <h2>User Information</h2>
+    
+     <p>Name:
+       <input type="text" required name="name" placeholder="John Doe">
+         </p>
+       
+      <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="male" required>Male
+          <input type="radio" name="gender" id="male" required>Female
+            </fieldset>
+          
+          
+          <p>Address:
+            <textarea placeholder="Enter your address" name="address" id="address" rows=10 cols=85 required></textarea>
+           </p>
+          
+          <p>Email:
+            <input type="email" name="email" id="email" placeholder="john123@gmail.com" required>
+              </p>
+            
+            <p>Pincode:
+              <input type="number" name="pincode" id="pincode" placeholder="Enter your pin" required>
+              
+                </p>
+              <hr>
+              <h2>Payment Information</h2>
+              <p>Card Type: <select name="card_type" id="card_type" required>
+                <option value="">----Select a card type----</option>
+                <option value="gpay">Gpay</option>
+                <option value="phonepay">Phonepay</option>
+                <option value="paytm">Paytm</option>
+                <option value="mastercard">Mastercard</option></p>
+                </select>
+                
+                
+   <p>Card number: <input type="number" name="card_no" id="card_no" placeholder="111 222 333 444" required>
+                  </p>
+                  
+    <p>Expiration Date: <input type="date" name="date" id="date">
+      </p>
+      
+      <p>CVV: <input type="password" name="pass" id="pass" placeholder="123"></p>
+       
+       <input type="submit" value="Pay Now" id="paynow">
+        
+                  
+  </form>
+    </div>
+  
+</body>
+
+</html>
